@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o meu amor ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fdfafb; /* Fundo levemente rosado/quente */
+            color: #4a4a4a;
+            overflow-x: hidden;
+        }
+
+        /* Seção do Topo */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #ffe6eb 0%, #fdfafb 100%);
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #d65a7a;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #7a7a7a;
+            margin-bottom: 30px;
+        }
+
+        .scroll-down {
+            font-size: 0.9rem;
+            color: #d65a7a;
+            animation: bounce 2s infinite;
+            margin-top: 50px;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-15px); }
+            60% { transform: translateY(-7px); }
+        }
+
+        /* Contador de Tempo */
+        .counter-container {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .counter-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #d65a7a;
+        }
+
+        .time-blocks {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .time-box {
+            text-align: center;
+        }
+
+        .time-box span {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .time-box small {
+            font-size: 0.7rem;
+            color: #999;
+        }
+
+        /* Seção de Conteúdo (Boxes) */
+        .content {
+            padding: 40px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+            margin-bottom: 30px;
+            text-align: center;
+            
+            /* Preparação para a animação */
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-out;
+        }
+
+        /* Classe que será adicionada pelo JS quando aparecer na tela */
+        .box.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .box h2 {
+            font-size: 1.3rem;
+            color: #d65a7a;
+            margin-bottom: 15px;
+        }
+
+        .box p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Espaço para você colocar o link de uma foto de vocês */
+        .photo-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #f0f0f0;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 0.9rem;
+            overflow: hidden;
+        }
+        
+        .photo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>Oi, meu amor!</h1>
+        <p>Fiz isso pra vc.</p>
+
+        <div class="counter-container">
+            <div class="counter-title">Nossa história começou há:</div>
+            <div class="time-blocks">
+                <div class="time-box"><span id="days">0</span><small>Dias</small></div>
+                <div class="time-box"><span id="hours">0</span><small>Horas</small></div>
+                <div class="time-box"><span id="minutes">0</span><small>Min</small></div>
+                <div class="time-box"><span id="seconds">0</span><small>Seg</small></div>
+            </div>
+        </div>
+
+        <div class="scroll-down">Deslize para baixo ↓</div>
+    </section>
+
+    <section class="content">
+        
+        <div class="box hidden">
+            <h2>O dia 28/11/2024</h2>
+            <p>Às 22 horas daquele dia, minha vida mudou para muito melhor. Foi ali que decidi que queria dividir meus dias com você, não só meus dias como o resto da minha vida inteira ao seu lado, que torna tudo mais especial.</p>
+        </div>
+
+        <div class="box hidden">
+            <div class="photo-placeholder">
+                <img src="foto.jpg" alt="Nossa foto">
+                </div>
+            <h2>Cada momento...</h2>
+            <p>É especial ao seu lado. Fiz essa pequena página só para te lembrar do quanto você é importante para mim e do quanto eu te amo, e o quando vc é a mulher mais importante do mundo pra mim, eu te amo muito e feliz dia das mulheres meu amor.</p>
+        </div>
+
+        <div class="box hidden">
+            <h2>Obrigado por tudo!</h2>
+            <p>Que esse seja apenas o começo de uma história linda que vamos construir juntos. Eu te amo mor! ❤️</p>
+        </div>
+
+    </section>
+
+    <footer>
+        Feito com todo o amor do mundo para você. ( Não me mata, nao achei nossa foto da formatura bonitinha.)
+    </footer>
+
+    <script>
+        // 1. Lógica do Contador
+        // Data do pedido: 28 de Novembro de 2024 às 22:00:00
+        const startDate = new Date('2024-11-28T22:00:00');
+
+        function updateCounter() {
+            const now = new Date();
+            const difference = now - startDate;
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((difference / 1000 / 60) % 60);
+            const seconds = Math.floor((difference / 1000) % 60);
+
+            document.getElementById('days').innerText = days;
+            document.getElementById('hours').innerText = hours;
+            document.getElementById('minutes').innerText = minutes;
+            document.getElementById('seconds').innerText = seconds;
+        }
+
+        setInterval(updateCounter, 1000);
+        updateCounter(); // Roda a primeira vez imediatamente
+
+        // 2. Lógica das animações ao rolar a página (Scroll Reveal)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, {
+            threshold: 0.1 // O efeito dispara quando 10% da caixa aparecer na tela
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
